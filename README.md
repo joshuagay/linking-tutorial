@@ -15,9 +15,15 @@ The purpose of all of these programs is to print the string "Hello, NAME". We ge
 
 - **name.c** Source file that defines the getName() function
 
-## TODO
+## todo
 
-Create Makefile to: 
+* Update makefile to do all compilation correctly
+* Explain how ld works
+* Explain how to use ldd to examine files 
+** explain how to use objdump?
+** explain how ldd just uses ld? 
+ 
+Explain each of the following steps: 
 
 * Copmile helloname.c -> helloname
 * Compile hello-getname.c -> hellogetname
@@ -29,10 +35,5 @@ Create Makefile to:
 ** gcc -c -fPIC name.c -o name.o
 ** gcc -shared -Wl,-soname,libname.so.1 -o libname.so  name.o
 ** gcc hello.c -o hello-dynamic -L. -lname
-
-
-
-Make sure to do 
-export LD_LIBRARY_PATH = .
-
+* export LD_LIBRARY_PATH = .
 
