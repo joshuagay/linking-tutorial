@@ -252,14 +252,12 @@ basically just another kind of object file, but with symbolic
 references done in a way that executables can "link" to it so that the
 operatin system "loads" it during runtime.
 
-    gcc -shared -Wl,-soname,libname.so.1 -o libname.so.1  name.o
+    gcc -shared -Wl,-soname,libname.so -o libname.so  name.o
 
-We now have a shared object file called libname.so.1. These are
-standard file nameing conventions that our compiler will understand
-later on.
+We now have a shared object file, libname.so.
 
 Now we go ahead and compile hello.c, and you we will instruct the
-linker to go and find the libname.so.
+linker to link it to libname.so.
 
     gcc hello.c -o hello-dynamic -L. -lname
 
