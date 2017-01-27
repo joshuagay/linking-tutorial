@@ -282,8 +282,7 @@ This time it should work. You can examine the shared object files that an execut
 Lastly, you can go ahead and make changes to name.c and then repeat the two steps for producing the .so file like this:
 
     gcc -c -fPIC name.c -o name.o
-    gcc -shared -Wl,-soname,libname.so.1 -o libname.so.1  name.o
-
+    gcc -shared -Wl,-soname,libname.so -o libname.so  name.o	
 
 Now if you run hello-dynamic again, this time you will see that the
 name that is printed out has changed despite the fact that the
