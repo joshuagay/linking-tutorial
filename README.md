@@ -25,7 +25,7 @@ that source code and end-up with an "executable" file which is written
 in a language that is able to communicate with whatever computer it is
 run on. 
 
-The C language is "portable" in teh sense that you don't really need
+The C language is "portable" in the sense that you don't really need
 to know what kind of computer you are going to run it on. If you write
 a program to run on Mac OS X or Windows, the C source code will look
 the same, but the executable file for Windows is going to be different
@@ -34,8 +34,7 @@ compiled for a 64 bit processor is going to be different than the
 executable file which was compiled for a 32 bit processor.
 
 When we say "compile" a program written in the C language, what
-actually happens can be understood as a four step process. However, since a program is usually written a series of 
-
+actually happens can be understood as a four step process. 
 
 
 **Step 1: preprocessor**
